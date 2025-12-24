@@ -3,49 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de The Tumor Fest - Développeur Full Stack spécialisé en JavaScript et Java">
     <title>The Tumor Fest - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Lien d'accès rapide -->
+    <a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navigation principale">
         <div class="container">
             <div class="logo">
                 <h1>The Tumor Fest</h1>
             </div>
-            <ul class="nav-links">
+            <button class="burger" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul class="nav-links" id="nav-links" role="navigation">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À propos</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="accueil" class="hero">
+    <section id="accueil" class="hero" aria-label="Section d'accueil">
         <div class="hero-content">
             <h1 class="hero-title">Bienvenue sur mon Portfolio</h1>
-            <p class="hero-subtitle">Développeur Full Stack | JavaScript & Java</p>
+            <p class="hero-subtitle">Développeur Full Stack | JavaScript &amp; Java</p>
             <div class="hero-buttons">
-                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                <a href="#projets" class="btn btn-primary" aria-label="Voir mes projets">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary" aria-label="Me contacter">Me contacter</a>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+        <div class="scroll-indicator" aria-hidden="true">
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="apropos" class="about">
+    <section id="apropos" class="about" aria-label="Section À propos">
         <div class="container">
             <h2 class="section-title">À propos de moi</h2>
             <div class="about-content">
@@ -72,132 +76,132 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projets" class="projects">
+    <section id="projets" class="projects" aria-label="Section Mes projets">
         <div class="container">
             <h2 class="section-title">Mes Projets</h2>
-            <div class="projects-grid">
+            <div class="projects-grid" role="list">
                 <!-- Project 1 -->
-                <div class="project-card">
+                <div class="project-card" role="listitem">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=Crypto+Superviseur" alt="Crypto Superviseur">
+                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=Crypto+Superviseur" alt="Crypto Superviseur - Application de surveillance en temps réel des cryptomonnaies">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Lien externe du projet Crypto Superviseur"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Code source sur GitHub du projet Crypto Superviseur"><i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Crypto Superviseur</h3>
                         <p>Application de surveillance en temps réel des cryptomonnaies avec analyse de marché et alertes personnalisées.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">API</span>
+                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
+                            <span class="tag" role="listitem">JavaScript</span>
+                            <span class="tag" role="listitem">React</span>
+                            <span class="tag" role="listitem">Node.js</span>
+                            <span class="tag" role="listitem">API</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card" role="listitem">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/764ba2/ffffff?text=E-Commerce+Platform" alt="E-Commerce">
+                        <img src="https://via.placeholder.com/400x250/764ba2/ffffff?text=E-Commerce+Platform" alt="Plateforme E-Commerce - Site de commerce électronique complet avec gestion des paniers">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Lien externe du projet Plateforme E-Commerce"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Code source sur GitHub du projet Plateforme E-Commerce"><i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Plateforme E-Commerce</h3>
                         <p>Site de commerce électronique complet avec gestion des paniers, paiements sécurisés et tableau de bord administrateur.</p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">REST API</span>
+                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
+                            <span class="tag" role="listitem">Java</span>
+                            <span class="tag" role="listitem">Spring Boot</span>
+                            <span class="tag" role="listitem">MySQL</span>
+                            <span class="tag" role="listitem">REST API</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card">
+                <div class="project-card" role="listitem">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/f093fb/ffffff?text=Task+Manager" alt="Task Manager">
+                        <img src="https://via.placeholder.com/400x250/f093fb/ffffff?text=Task+Manager" alt="Gestionnaire de Tâches - Application de gestion de projets avec collaboration">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Lien externe du projet Gestionnaire de Tâches"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Code source sur GitHub du projet Gestionnaire de Tâches"><i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Gestionnaire de Tâches</h3>
                         <p>Application de gestion de projets avec collaboration en temps réel, calendriers et notifications.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">WebSocket</span>
+                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
+                            <span class="tag" role="listitem">JavaScript</span>
+                            <span class="tag" role="listitem">Vue.js</span>
+                            <span class="tag" role="listitem">Firebase</span>
+                            <span class="tag" role="listitem">WebSocket</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card">
+                <div class="project-card" role="listitem">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/4facfe/ffffff?text=Portfolio+Generator" alt="Portfolio">
+                        <img src="https://via.placeholder.com/400x250/4facfe/ffffff?text=Portfolio+Generator" alt="Générateur de Portfolio - Outil permettant de créer des portfolios personnalisés">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Lien externe du projet Générateur de Portfolio"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Code source sur GitHub du projet Générateur de Portfolio"><i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Générateur de Portfolio</h3>
                         <p>Outil permettant de créer des portfolios personnalisés avec plusieurs thèmes et exportation en HTML/CSS.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">Templates</span>
+                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
+                            <span class="tag" role="listitem">JavaScript</span>
+                            <span class="tag" role="listitem">HTML5</span>
+                            <span class="tag" role="listitem">CSS3</span>
+                            <span class="tag" role="listitem">Templates</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 5 -->
-                <div class="project-card">
+                <div class="project-card" role="listitem">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/00f2fe/ffffff?text=Weather+App" alt="Weather App">
+                        <img src="https://via.placeholder.com/400x250/00f2fe/ffffff?text=Weather+App" alt="Application Météo - Interface météorologique interactive avec prévisions">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Lien externe du projet Application Météo"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Code source sur GitHub du projet Application Météo"><i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Application Météo</h3>
                         <p>Interface météorologique interactive avec prévisions détaillées, cartes et données historiques.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">API REST</span>
-                            <span class="tag">Charts.js</span>
-                            <span class="tag">Geolocation</span>
+                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
+                            <span class="tag" role="listitem">JavaScript</span>
+                            <span class="tag" role="listitem">API REST</span>
+                            <span class="tag" role="listitem">Charts.js</span>
+                            <span class="tag" role="listitem">Geolocation</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 6 -->
-                <div class="project-card">
+                <div class="project-card" role="listitem">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/43e97b/ffffff?text=Banking+System" alt="Banking">
+                        <img src="https://via.placeholder.com/400x250/43e97b/ffffff?text=Banking+System" alt="Système Bancaire - Application bancaire sécurisée avec gestion de comptes">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Lien externe du projet Système Bancaire"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Code source sur GitHub du projet Système Bancaire"><i class="fab fa-github" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Système Bancaire</h3>
                         <p>Application bancaire sécurisée avec gestion de comptes, transactions et rapports financiers.</p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">Spring Security</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">JWT</span>
+                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
+                            <span class="tag" role="listitem">Java</span>
+                            <span class="tag" role="listitem">Spring Security</span>
+                            <span class="tag" role="listitem">PostgreSQL</span>
+                            <span class="tag" role="listitem">JWT</span>
                         </div>
                     </div>
                 </div>
@@ -206,34 +210,34 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="competences" class="skills">
+    <section id="competences" class="skills" aria-label="Section Compétences">
         <div class="container">
             <h2 class="section-title">Compétences</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Front-End</h3>
+                    <h3><i class="fas fa-code" aria-hidden="true"></i> Front-End</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>HTML5/CSS3</span>
-                            <div class="skill-bar">
+                            <span id="skill-html">HTML5/CSS3</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-html">
                                 <div class="skill-progress" style="width: 95%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>JavaScript</span>
-                            <div class="skill-bar">
+                            <span id="skill-js">JavaScript</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-js">
                                 <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>React/Vue.js</span>
-                            <div class="skill-bar">
+                            <span id="skill-react">React/Vue.js</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-react">
                                 <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>TypeScript</span>
-                            <div class="skill-bar">
+                            <span id="skill-ts">TypeScript</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-ts">
                                 <div class="skill-progress" style="width: 80%"></div>
                             </div>
                         </div>
@@ -241,29 +245,29 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Back-End</h3>
+                    <h3><i class="fas fa-server" aria-hidden="true"></i> Back-End</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>Java</span>
-                            <div class="skill-bar">
+                            <span id="skill-java">Java</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-java">
                                 <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Node.js</span>
-                            <div class="skill-bar">
+                            <span id="skill-node">Node.js</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-node">
                                 <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Spring Boot</span>
-                            <div class="skill-bar">
+                            <span id="skill-spring">Spring Boot</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-spring">
                                 <div class="skill-progress" style="width: 88%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Express.js</span>
-                            <div class="skill-bar">
+                            <span id="skill-express">Express.js</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-express">
                                 <div class="skill-progress" style="width: 82%"></div>
                             </div>
                         </div>
@@ -271,29 +275,29 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Base de Données</h3>
+                    <h3><i class="fas fa-database" aria-hidden="true"></i> Base de Données</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>MySQL</span>
-                            <div class="skill-bar">
+                            <span id="skill-mysql">MySQL</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-mysql">
                                 <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>PostgreSQL</span>
-                            <div class="skill-bar">
+                            <span id="skill-postgres">PostgreSQL</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-postgres">
                                 <div class="skill-progress" style="width: 80%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>MongoDB</span>
-                            <div class="skill-bar">
+                            <span id="skill-mongo">MongoDB</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-mongo">
                                 <div class="skill-progress" style="width: 83%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Firebase</span>
-                            <div class="skill-bar">
+                            <span id="skill-firebase">Firebase</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-firebase">
                                 <div class="skill-progress" style="width: 78%"></div>
                             </div>
                         </div>
@@ -301,29 +305,29 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Outils & Autres</h3>
+                    <h3><i class="fas fa-tools" aria-hidden="true"></i> Outils &amp; Autres</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>Git/GitHub</span>
-                            <div class="skill-bar">
+                            <span id="skill-git">Git/GitHub</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-git">
                                 <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Docker</span>
-                            <div class="skill-bar">
+                            <span id="skill-docker">Docker</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-docker">
                                 <div class="skill-progress" style="width: 75%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>REST API</span>
-                            <div class="skill-bar">
+                            <span id="skill-api">REST API</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-api">
                                 <div class="skill-progress" style="width: 88%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Agile/Scrum</span>
-                            <div class="skill-bar">
+                            <span id="skill-agile">Agile/Scrum</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-labelledby="skill-agile">
                                 <div class="skill-progress" style="width: 80%"></div>
                             </div>
                         </div>
@@ -334,58 +338,66 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-label="Section Contact">
         <div class="container">
             <h2 class="section-title">Me Contacter</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Restons en contact</h3>
                     <p>N'hésitez pas à me contacter pour discuter de vos projets ou pour toute collaboration.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>contact@tumorfest.dev</span>
+                    <div class="contact-details" role="list" aria-label="Moyens de contact">
+                        <div class="contact-item" role="listitem">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:contact@tumorfest.dev">contact@tumorfest.dev</a>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+33 6 12 34 56 78</span>
+                        <div class="contact-item" role="listitem">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+33612345678">+33 6 12 34 56 78</a>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item" role="listitem">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <span>Paris, France</span>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <div class="social-links" role="list" aria-label="Réseaux sociaux">
+                        <a href="#" class="social-link" aria-label="GitHub" role="listitem"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn" role="listitem"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter" role="listitem"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram" role="listitem"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" method="POST" action="#" novalidate aria-label="Formulaire de contact">
                     <div class="form-group">
-                        <input type="text" placeholder="Votre nom" required>
+                        <label for="contact-name">Votre nom <span aria-label="requis">*</span></label>
+                        <input type="text" id="contact-name" name="name" placeholder="Votre nom" required aria-required="true">
+                        <span class="error-message" id="error-name" role="alert" aria-live="polite"></span>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Votre email" required>
+                        <label for="contact-email">Votre email <span aria-label="requis">*</span></label>
+                        <input type="email" id="contact-email" name="email" placeholder="Votre email" required aria-required="true">
+                        <span class="error-message" id="error-email" role="alert" aria-live="polite"></span>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Sujet">
+                        <label for="contact-subject">Sujet</label>
+                        <input type="text" id="contact-subject" name="subject" placeholder="Sujet">
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                        <label for="contact-message">Votre message <span aria-label="requis">*</span></label>
+                        <textarea id="contact-message" name="message" placeholder="Votre message" rows="5" required aria-required="true"></textarea>
+                        <span class="error-message" id="error-message" role="alert" aria-live="polite"></span>
                     </div>
-                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    <button type="submit" class="btn btn-primary" aria-label="Envoyer le formulaire de contact">Envoyer le message</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2025 The Tumor Fest. Tous droits réservés.</p>
-            <p>Développé avec <i class="fas fa-heart"></i> en JavaScript</p>
+            <p>Développé avec <i class="fas fa-heart" aria-label="amour" aria-hidden="false"></i> en JavaScript</p>
+            <p class="accessibility-link"><a href="accessibility.html" aria-label="Déclaration d'accessibilité RGAA">Accessibilité RGAA 4.1</a></p>
         </div>
     </footer>
 
