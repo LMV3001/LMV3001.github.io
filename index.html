@@ -6,7 +6,8 @@
     <meta name="description" content="Portfolio de The Tumor Fest - Développeur Full Stack spécialisé en JavaScript et Java">
     <title>The Tumor Fest - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 <body>
     <!-- Lien d'accès rapide -->
@@ -23,7 +24,7 @@
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </button>
-            <ul class="nav-links" id="nav-links" role="navigation">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À propos</a></li>
                 <li><a href="#projets">Projets</a></li>
@@ -32,6 +33,7 @@
             </ul>
         </div>
     </nav>
+    <main id="contenu-principal">
 
     <!-- Hero Section -->
     <section id="accueil" class="hero" aria-label="Section d'accueil">
@@ -92,12 +94,12 @@
                     <div class="project-info">
                         <h3>Crypto Superviseur</h3>
                         <p>Application de surveillance en temps réel des cryptomonnaies avec analyse de marché et alertes personnalisées.</p>
-                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
-                            <span class="tag" role="listitem">JavaScript</span>
-                            <span class="tag" role="listitem">React</span>
-                            <span class="tag" role="listitem">Node.js</span>
-                            <span class="tag" role="listitem">API</span>
-                        </div>
+                        <ul class="project-tags" aria-label="Technologies utilisées">
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">React</li>
+                            <li class="tag">Node.js</li>
+                            <li class="tag">API</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -113,12 +115,12 @@
                     <div class="project-info">
                         <h3>Plateforme E-Commerce</h3>
                         <p>Site de commerce électronique complet avec gestion des paniers, paiements sécurisés et tableau de bord administrateur.</p>
-                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
-                            <span class="tag" role="listitem">Java</span>
-                            <span class="tag" role="listitem">Spring Boot</span>
-                            <span class="tag" role="listitem">MySQL</span>
-                            <span class="tag" role="listitem">REST API</span>
-                        </div>
+                        <ul class="project-tags" aria-label="Technologies utilisées">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring Boot</li>
+                            <li class="tag">MySQL</li>
+                            <li class="tag">REST API</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -134,12 +136,12 @@
                     <div class="project-info">
                         <h3>Gestionnaire de Tâches</h3>
                         <p>Application de gestion de projets avec collaboration en temps réel, calendriers et notifications.</p>
-                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
-                            <span class="tag" role="listitem">JavaScript</span>
-                            <span class="tag" role="listitem">Vue.js</span>
-                            <span class="tag" role="listitem">Firebase</span>
-                            <span class="tag" role="listitem">WebSocket</span>
-                        </div>
+                        <ul class="project-tags" aria-label="Technologies utilisées">
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">Vue.js</li>
+                            <li class="tag">Firebase</li>
+                            <li class="tag">WebSocket</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -155,12 +157,12 @@
                     <div class="project-info">
                         <h3>Générateur de Portfolio</h3>
                         <p>Outil permettant de créer des portfolios personnalisés avec plusieurs thèmes et exportation en HTML/CSS.</p>
-                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
-                            <span class="tag" role="listitem">JavaScript</span>
-                            <span class="tag" role="listitem">HTML5</span>
-                            <span class="tag" role="listitem">CSS3</span>
-                            <span class="tag" role="listitem">Templates</span>
-                        </div>
+                        <ul class="project-tags" aria-label="Technologies utilisées">
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">HTML5</li>
+                            <li class="tag">CSS3</li>
+                            <li class="tag">Templates</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -176,12 +178,12 @@
                     <div class="project-info">
                         <h3>Application Météo</h3>
                         <p>Interface météorologique interactive avec prévisions détaillées, cartes et données historiques.</p>
-                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
-                            <span class="tag" role="listitem">JavaScript</span>
-                            <span class="tag" role="listitem">API REST</span>
-                            <span class="tag" role="listitem">Charts.js</span>
-                            <span class="tag" role="listitem">Geolocation</span>
-                        </div>
+                        <ul class="project-tags" aria-label="Technologies utilisées">
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">API REST</li>
+                            <li class="tag">Charts.js</li>
+                            <li class="tag">Geolocation</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -197,12 +199,12 @@
                     <div class="project-info">
                         <h3>Système Bancaire</h3>
                         <p>Application bancaire sécurisée avec gestion de comptes, transactions et rapports financiers.</p>
-                        <div class="project-tags" role="list" aria-label="Technologies utilisées">
-                            <span class="tag" role="listitem">Java</span>
-                            <span class="tag" role="listitem">Spring Security</span>
-                            <span class="tag" role="listitem">PostgreSQL</span>
-                            <span class="tag" role="listitem">JWT</span>
-                        </div>
+                        <ul class="project-tags" aria-label="Technologies utilisées">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring Security</li>
+                            <li class="tag">PostgreSQL</li>
+                            <li class="tag">JWT</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -345,26 +347,26 @@
                 <div class="contact-info">
                     <h3>Restons en contact</h3>
                     <p>N'hésitez pas à me contacter pour discuter de vos projets ou pour toute collaboration.</p>
-                    <div class="contact-details" role="list" aria-label="Moyens de contact">
-                        <div class="contact-item" role="listitem">
+                    <ul class="contact-details" aria-label="Moyens de contact">
+                        <li class="contact-item">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                             <a href="mailto:contact@tumorfest.dev">contact@tumorfest.dev</a>
-                        </div>
-                        <div class="contact-item" role="listitem">
+                        </li>
+                        <li class="contact-item">
                             <i class="fas fa-phone" aria-hidden="true"></i>
                             <a href="tel:+33612345678">+33 6 12 34 56 78</a>
-                        </div>
-                        <div class="contact-item" role="listitem">
+                        </li>
+                        <li class="contact-item">
                             <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <span>Paris, France</span>
-                        </div>
-                    </div>
-                    <div class="social-links" role="list" aria-label="Réseaux sociaux">
-                        <a href="#" class="social-link" aria-label="GitHub" role="listitem"><i class="fab fa-github" aria-hidden="true"></i></a>
-                        <a href="#" class="social-link" aria-label="LinkedIn" role="listitem"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="#" class="social-link" aria-label="Twitter" role="listitem"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" class="social-link" aria-label="Instagram" role="listitem"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    </div>
+                        </li>
+                    </ul>
+                    <ul class="social-links" aria-label="Réseaux sociaux">
+                        <li><a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
                 <form class="contact-form" method="POST" action="#" novalidate aria-label="Formulaire de contact">
                     <div class="form-group">
@@ -393,6 +395,7 @@
     </section>
 
     <!-- Footer -->
+    </main>
     <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2025 The Tumor Fest. Tous droits réservés.</p>
@@ -400,7 +403,6 @@
             <p class="accessibility-link"><a href="accessibility.html" aria-label="Déclaration d'accessibilité RGAA">Accessibilité RGAA 4.1</a></p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

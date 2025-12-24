@@ -18,6 +18,23 @@
     --focus-color: #ff6b6b;
 }
 
+/* Ensure icon fonts do not block text rendering */
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2') format('woff2');
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -487,6 +504,9 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .tag {
@@ -588,6 +608,8 @@ section {
 
 .contact-details {
     margin-bottom: 2rem;
+    list-style: none;
+    padding: 0;
 }
 
 .contact-item {
@@ -628,6 +650,8 @@ section {
 .social-links {
     display: flex;
     gap: 1rem;
+    list-style: none;
+    padding: 0;
 }
 
 .social-link {
