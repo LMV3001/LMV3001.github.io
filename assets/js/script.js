@@ -3,37 +3,39 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
 
-burger.addEventListener('click', () => {
-    // Toggle Nav
-    const isActive = nav.classList.toggle('active');
-    burger.setAttribute('aria-expanded', isActive);
-    
-    // Animate Links
-    navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-            link.style.animation = '';
-        } else {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+if (burger && nav) {
+    burger.addEventListener('click', () => {
+        // Toggle Nav
+        const isActive = nav.classList.toggle('active');
+        burger.setAttribute('aria-expanded', isActive);
+        
+        // Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+    });
+
+    // Close mobile menu when clicking on a link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            burger.setAttribute('aria-expanded', false);
+        });
+    });
+
+    // Close menu with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            burger.setAttribute('aria-expanded', false);
+            burger.focus();
         }
     });
-});
-
-// Close mobile menu when clicking on a link
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('active');
-        burger.setAttribute('aria-expanded', false);
-    });
-});
-
-// Close menu with Escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && nav.classList.contains('active')) {
-        nav.classList.remove('active');
-        burger.setAttribute('aria-expanded', false);
-        burger.focus();
-    }
-});
+}
 
 // Navbar Scroll Effect
 const navbar = document.querySelector('.navbar');
