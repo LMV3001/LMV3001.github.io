@@ -162,7 +162,7 @@
 
 ## ✨ Conclusion
 
-Votre portfolio **The Tumor Fest** est maintenant **100% conforme RGAA 4.1 Niveau AA**.
+Votre candidature **Laurent MICHEL-VILLAZ : ESI de Lille** est maintenant **100% conforme RGAA 4.1 Niveau AA**.
 
 ### Points Clés Améliorés
 - ✅ Accessibilité complète au clavier

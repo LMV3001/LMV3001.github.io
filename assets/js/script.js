@@ -1,3 +1,29 @@
+// Branding via getter to keep name centralized
+const brand = {
+    get displayName() {
+        return 'Candidature Laurent MICHEL-VILLAZ : ESI de Lille';
+    },
+    get description() {
+        return 'Candidature de Laurent MICHEL-VILLAZ (ESI de Lille) - Développeur Full Stack spécialisé en JavaScript et Java';
+    }
+};
+
+function applyBranding() {
+    const logo = document.querySelector('.logo h1');
+    if (logo) logo.textContent = brand.displayName;
+
+    if (document.title !== brand.displayName) {
+        document.title = brand.displayName;
+    }
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+        metaDescription.setAttribute('content', brand.description);
+    }
+}
+
+applyBranding();
+
 // Mobile Navigation Toggle
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');

@@ -1,7 +1,7 @@
 # 📋 RÉSUMÉ DES MODIFICATIONS D'ACCESSIBILITÉ
 
 ## 🎯 Objectif
-Implémenter la conformité **RGAA 4.1 Niveau AA** sur le portfolio The Tumor Fest avec toutes les améliorations d'accessibilité nécessaires.
+Implémenter la conformité **RGAA 4.1 Niveau AA** sur la candidature Laurent MICHEL-VILLAZ : ESI de Lille avec toutes les améliorations d'accessibilité nécessaires.
 
 ---
 

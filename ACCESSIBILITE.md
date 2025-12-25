@@ -1,4 +1,4 @@
-# Guide d'Accessibilité RGAA - The Tumor Fest Portfolio
+# Guide d'Accessibilité RGAA - Candidature Laurent MICHEL-VILLAZ : ESI de Lille
 
 ## Conformité RGAA 4.1
 
@@ -116,7 +116,7 @@ Ce document détaille les améliorations d'accessibilité apportées au portfoli
 ```html
 <html lang="fr">
 <meta charset="UTF-8">
-<meta name="description" content="Portfolio de The Tumor Fest - Développeur Full Stack...">
+<meta name="description" content="Candidature Laurent MICHEL-VILLAZ : ESI de Lille - Développeur Full Stack...">
 ```
 
 #### Semantique

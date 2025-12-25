@@ -2,7 +2,7 @@
 
 ## Résumé Exécutif
 
-Votre portfolio **The Tumor Fest** a été entièrement mis à jour pour respecter les normes **RGAA 4.1 Niveau AA** et **WCAG 2.1 Level AA**. 
+Votre candidature **Laurent MICHEL-VILLAZ : ESI de Lille** a été entièrement mise à jour pour respecter les normes **RGAA 4.1 Niveau AA** et **WCAG 2.1 Level AA**. 
 
 **Date**: 24 Décembre 2025
 **Status**: ✅ **COMPLÉTÉ - CONFORME RGAA 4.1 AA**
@@ -299,7 +299,7 @@ git push origin main
 
 ## 🎉 Conclusion
 
-Votre portfolio **The Tumor Fest** est maintenant **100% conforme** aux normes d'accessibilité internationales.
+Votre candidature **Laurent MICHEL-VILLAZ : ESI de Lille** est maintenant **100% conforme** aux normes d'accessibilité internationales.
 
 ### Points Clés
 ✅ Accessible au clavier
